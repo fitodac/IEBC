@@ -1,0 +1,918 @@
+/*-----------------------------------------------*/
+/*  RESPONSIVE
+/*  Bootstrap media queries
+/*-----------------------------------------------*/
+@media screen and (max-width: 1440px) {
+	
+}//@media screen and (max-width: 1440px)
+
+
+@media screen and (max-width: 1200px) {
+
+	#section-pr-thomas-robertson{
+		margin-bottom: 180px;
+
+		> .container > .row > [class^="col-"]{
+			margin-top: 100px;
+			margin-left: 30px;
+		}
+	}//section-pr-thomas-robertson
+
+}//@media screen and (max-width: 1200px)
+
+
+
+
+
+@media screen and (max-height: 600px) {
+	
+	#section-nosotros{
+		padding-top: 40vh;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+	
+}//@media screen and (max-width: 1050px)
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+	body{
+		font-size: 13px;
+	}//body
+
+
+	.container{
+		width: 100%;
+	}
+
+	.main-header .menu-main-navbar-container .nav.navbar-nav li > a{
+		font-size: .8rem;
+	}
+
+	.fixed-sidebar .sidebar-wrapper{
+		padding-right: 0;
+	}
+
+
+	#recent-preach footer{
+		padding-bottom: 50px;
+	}
+
+	body.home .latest-preaches{
+
+		> .h4{
+			text-align: center;
+		}
+
+		.list-group{
+
+			.list-group-item{
+				width: 50%;
+				float: left;
+			}//list-group-item
+
+			&::after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+		}//list-group
+
+
+		& + .btn{
+			max-width: 50%;
+			// margin: 0 auto;
+		}
+	}
+	
+
+
+	#section-life-focus{
+		padding-bottom: 70px;
+
+		.container{
+			width: 100%;
+		}
+
+		[class^="col-"]{
+			padding: 0;
+		}
+
+		.card{
+			border-radius: 0;
+			box-shadow: none;
+
+			.card-img-overlay{
+				padding-bottom: 20px;
+			}
+		}//card
+
+		.buttons{
+			margin-top: -15px;
+
+			.btn{
+				min-height: 50px;
+				min-width: 50px;
+
+				svg{
+					width: 25px !important;
+				}
+			}
+		}
+
+	}//section-life-focus
+
+
+	#section-pr-thomas-robertson > .container > .row > [class^="col-"]{
+		margin-left: calc(33.3% + 20px);
+		margin-top: 80px;
+	}
+
+
+
+	body:not(.home) #section-horarios-de-reuniones{
+
+		.h4 + .row{
+			padding-top: 0;
+		}
+
+		.h4 + .row [class^="col-"]{
+			margin-bottom: 40px;
+		}
+
+		.h4 + .row [class^="col-"] .date{
+			text-align: center;
+			padding: 0 0 4px;
+			display: block;
+		}
+
+		.h4 + .row [class^="col-"] .hour{
+			border: none;
+			line-height: 1;
+			text-align: center;
+			padding: 0 0 4px;
+			position: relative;
+			display: block;
+		}
+
+		.h4 + .row [class^="col-"] .activity{
+			text-align: center;
+			padding: 0;
+		}
+
+
+		[class*="schedule-"] .hour{
+			float: none;
+		}
+
+		[class*="schedule-"] .activity{
+			padding-left: 2px;
+			padding-top: 10px;
+			display: block;
+		}
+
+		.schedule-1{
+			text-align: right;
+		}
+
+	}//body:not(.home) #section-horarios-de-reuniones
+
+
+
+	#section-jesus,
+	#section-comprometerse,
+	#section-conectarse,
+	#section-crecer,
+	#section-servir,
+	#section-dar{
+		padding-top: 240px;
+	}
+
+	
+	body.soy-nuevo .main-footer .container,
+	body.enfoque .main-footer .container{
+		width: 66.7%;
+		margin-left: 33.3%;
+
+		.copy{
+			width: 60%;
+			margin-left: 20%;
+		}
+	}
+
+	.fixed-sidebar{
+		width: 100%;
+	}
+
+	.latest-preaches .list-group .list-group-item .preach-title{
+		font-size: .85rem;
+	}
+
+
+	.contact-form .row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}//@media screen and (max-width: 991px)
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+	.main-header .topbar #menu-secondary-navbar{
+		text-align: right;
+		width: 100%;
+		margin: 0;
+		float: none;
+
+		.menu-item{
+			display: inline-block;
+		}
+	}//menu-secondary-navbar
+	
+
+
+	.main-header .navbar-toggle{
+		margin: 0;
+		right: -15px;
+		position: absolute;
+	}
+	
+
+	.main-header .topbar .container,
+	.main-header > .container{
+		width: 100%;
+		margin: 0;
+	}
+
+
+	.navbar-collapse{
+		background: #fff;
+		width: 100vw;
+		height: 100vh !important;
+		left: 0;
+		top: 0;
+		position: fixed;
+		overflow: hidden;
+		transform: scale(2);
+		-webkit-transform: scale(2);
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s ease-out;
+
+
+		.menu-main-navbar-container{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		#menu-main-navbar{
+			margin: 0 auto;
+			display: block;
+			width: 100%;
+			top: 50%;
+			position: relative;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+
+			li{
+				text-align: center;
+
+				a{
+					color: #444;
+					font: 1rem $roboto-slab;
+					padding-top: 7px;
+					padding-bottom: 7px;
+					display: inline-block;
+				}
+			}
+		}
+
+		&.collapse.in{
+			transform: scale(1);
+			-webkit-transform: scale(1);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.navbar-toggle{
+			color: #444;
+			border: none;
+			font-size: 2rem;
+			line-height: 1;
+			width: 70px;
+			height: 70px;
+			padding: 0;
+			right: 0;
+			top: 0;
+			display: block;
+			position: absolute;
+
+			&:hover,
+			&:active,
+			&:focus{background-color: transparent;}
+		}
+
+	}
+
+
+
+	#section-horarios-de-reuniones{
+		> .container > .row{
+			padding: 0;
+
+			> .col-sm-3{
+				border: none !important;
+				width: 50% !important;
+				padding-bottom: 30px;
+				float: left;
+			}
+
+		}//row
+	}//section-horarios-de-reuniones
+
+
+
+	body > .container{
+		position: inherit !important;
+	}//container
+
+
+
+	#section-life-focus .container,
+	.container{
+		width: 88%;
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+
+
+	#main-slider .item .container-fluid > .row .slider-description{
+		width: calc(100% - 80px);
+		margin-left: 0;
+		padding-left: 40px;
+
+		.h2{
+			font-size: 25px;
+
+			span{
+				font-size: 1.8rem;
+			}
+		}//h2
+	} 
+
+
+	body.home .latest-preaches + .btn,
+	#recent-preach footer .btn{
+		max-width: 60%;
+		margin: 0 auto;
+	}
+	
+
+	.col-5{
+		border: none !important;
+		width: 33.3%;
+		margin-bottom: 30px;
+	}
+
+
+	#section-banners .row > .widget{
+		width: 70%;
+		padding: 0;
+		margin: 0 15% 30px;
+		float: none;
+	}
+	
+	#section-banners .row > .widget:last-child{
+		margin-bottom: 0;
+	}
+
+
+	#section-life-focus .card{
+		margin-bottom: 30px;
+		border-radius: 3px;
+	}
+
+	#section-life-focus .card .card-img-overlay{
+		padding-bottom: 30px;
+	}
+
+	#section-life-focus .buttons{
+		margin-top: -50px;
+	}
+
+
+	body.page-template-page-new-here{
+
+		#section-map{
+			margin-top: 220px;
+		}
+
+		#section-content{
+			margin-bottom: -60px;
+		}
+	}//page-template-page-new-here
+
+
+
+
+
+	.fixed-sidebar{
+		left: 0;
+		top: 0 !important;
+		position: absolute !important;
+
+		> .container{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		header{
+			background-position: center;
+			border-radius: 0 !important;
+
+			&::after{
+				border-radius: 0 !important;
+			}
+
+			.page-title{
+				font-size: 2rem;
+			}
+		}//header
+
+
+	}//fixed-sidebar
+
+
+	.sidebar-wrapper .sidebar-content .nav,
+	.sidebar-wrapper .sidebar-content .latest-preaches{
+		display: none;
+	}
+
+
+	#section-pr-thomas-robertson{
+		background-size: cover;
+		background-position: center;
+
+		> .container > .row > [class^="col-"]{
+			width: 100% !important;
+			margin: 130px 0 0 !important;
+		}
+	}
+
+
+	body.page-template-page-preaches #section-mensajes{
+		padding-top: 260px;
+	}
+
+	body.single{
+		padding-top: 260px;
+	}
+
+
+	body.contacto{
+		padding-top: 220px;
+
+		.main-header + div{
+			position: relative;
+			z-index: 40;
+		}
+
+
+		.fixed-sidebar{
+			top: -220px !important;
+		}
+	}
+
+
+	#section-nosotros{
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: auto;
+		padding-top: 100px;
+		position: relative;
+
+		&::after{
+			height: 100vh;
+		}
+
+		h3{
+			font-size: 1.2rem;
+			margin-top: 0;
+		}//h3
+
+		.h2 + .row > [class^="col-"]{
+			padding-bottom: 30px;
+		}
+	}//#section-nosotros
+
+
+
+	body.page-template-page-about #section-nuestra-historia{
+		padding: 60px 0;
+		margin-bottom: 30px;
+	}//section-nuestra-historia
+
+
+	#section-lo-que-creemos{
+
+		.h2{
+			font-size: 1.6rem;
+			padding-bottom: 0 !important;
+		}
+
+		> .container > .row > [class^="col-"] > .row > div{
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}//row
+	}//section-lo-que-creemos
+
+
+
+	#section-nuestra-historia{
+
+		.h2{
+			font-size: 1.6rem;
+			padding-bottom: 0 !important;
+		}
+
+	}//section-nuestra-historia
+
+
+	.page-header{
+		z-index: 0;
+	}
+
+}//@media screen and (max-width: 768px)
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+	
+	.main-header .topbar{
+		display: none;
+	}
+
+	.nav > .nav-item-xs{
+		display: block;
+	}
+
+	.main-header .navbar-brand{
+		width: 140px;
+		margin: 12px 0 0;
+	}
+
+	.main-header .container{
+		width: 100%;
+		margin: 0;
+	}
+
+
+	.main-header .navbar-toggle{
+		right: -15px;
+	}
+
+
+
+	// #main-slider{
+	// 	height: 50vh;
+	// }//main-slider
+
+
+
+	body:not(.home) #section-horarios-de-reuniones{
+
+		[class*="schedule-"]{
+			text-align: center;
+			display: block;
+
+			.hour{
+				font-size: 1.7rem;
+				text-align: center;
+				display: block;
+				float: none;
+			}//hour
+
+			.activity{
+				font-size: .9rem;
+				text-align: center;
+				padding: 8px 0 0;
+				display: block;
+			}
+		}//[class*="schedule-"] 
+
+	}//section-horarios-de-reuniones
+
+
+	body.soy-nuevo .main-footer .container, 
+	body.enfoque .main-footer .container,
+	.main-footer .container{
+		width: 100%;
+		margin: 0;
+	}
+
+
+
+	#section-pr-thomas-robertson{
+		margin-bottom: 310px !important;
+	 
+		> .container > .row > [class^="col-"]{
+			margin-top: 230px !important;
+		}
+	}//section-pr-thomas-robertson
+
+
+	body.page-template-page-preaches #section-mensajes article{
+
+		> .text-right{
+			text-align: center !important;
+		}
+
+	}//section-mensajes article
+
+
+
+	.fixed-sidebar{
+
+		> .container{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+
+			header{
+				.page-title{
+					text-align: center;
+					left: 50%;
+					transform: translateX(-50%);
+					-webkit-transform: translateX(-50%);
+				}//page-title
+			}//header
+
+		}//container
+
+	}//fixed-sidebar
+
+
+
+	body.mensajes{
+
+		.h2{
+			font-size: 20px;
+			text-align: center;
+		}
+
+
+		article header .post-data{
+
+			> div{
+				border: none;
+				text-align: center;
+				padding: 0 0 6px;
+				margin: 0;
+				display: block;
+				float: none;
+			}
+
+		}//post-data
+
+
+		.h3{
+			font-size: 18px;
+			text-align: center;
+		}
+
+	}//mensajes
+
+
+
+
+	body.single{
+		
+		article{
+
+			header{
+				.h2{
+					font-size: 23px;
+					margin-bottom: 20px;
+				}
+
+				.post-data{
+
+					> div{
+						border: none;
+						text-align: left;
+						padding: 0 0 6px;
+						margin: 0;
+						display: block;
+						float: none;
+					}
+
+				}//post-data
+			}//header
+
+		}//article
+
+	}//single
+
+
+	.main-footer .copy{
+		font-size: .7rem;
+	}
+
+
+}//@media screen and (max-width: 640px)
+
+
+
+
+
+
+
+
+@media screen and (max-width: 440px) {
+
+	body{
+		font-size: 12px;
+	}
+
+	.h2, h2{
+		font-size: 25px;
+	}
+
+	body.home .latest-preaches + .btn, 
+	#recent-preach footer .btn{
+		max-width: 100%;
+	}
+
+	body.home .latest-preaches .list-group .list-group-item{
+		width: 100%;
+		float: none;
+	}
+	
+	.col-5{
+		width: 100%;
+		float: none;
+	}
+
+
+
+	#main-slider{
+		height: 100vh;
+		margin-bottom: 0;
+
+		.item{
+			background-position: right top;
+
+			.container-fluid > .row .slider-description{
+				width: 100%;
+
+				.h2 span{
+					line-height: 1.1;
+				}
+			}
+
+		}//item
+
+	}//main-slider
+
+
+
+	#section-horarios-de-reuniones{
+		.container > .row > .col-xs-5{
+			width: 50% !important;
+			margin: 0 !important;
+		}
+
+		[class*="schedule-"] .hour{
+			font-size: 1.8rem;
+		}
+	}//section-horarios-de-reuniones
+
+
+
+	#section-banners{
+
+		.h4{
+			margin-bottom: 20px;
+		}
+
+		.row > .widget{
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}//widget
+	}//section-banners
+
+
+	#section-life-focus{
+
+		.container > .row > [class^="col-"]{
+			width: 100% !important;
+			max-height: 190px !important;
+			margin: 0 !important;
+		}
+
+	}//section-life-focus
+
+
+	body:not(.home) #section-horarios-de-reuniones [class*="schedule-"] .hour{
+		font-size: 2rem;
+	}
+
+
+	.post-data{
+		> div{
+			border: none !important;
+			text-align: center;
+			display: block;
+			padding: 0 0 10px !important;
+			margin: 0 !important;
+			float: none !important;
+		}
+	}
+
+
+	.page-header.has-background{
+		height: 40vh;
+		margin-bottom: 0;
+
+		&::after{
+			display: none;
+		}
+
+	}//page-header.has-background
+
+
+	.fixed-sidebar{
+
+		> .container{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+	}//fixed-sidebar
+
+
+	body.page-template-page-contact #section-map{
+		height: 280px !important;
+		margin-bottom: 60px;
+		overflow: hidden;
+	}
+
+	.main-footer .copy{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+}//@media screen and (max-width: 440px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

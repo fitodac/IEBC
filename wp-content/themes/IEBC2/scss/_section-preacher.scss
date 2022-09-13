@@ -1,0 +1,37 @@
+/*----------------------------------------*/
+/*  PRECHER SECTION
+/*----------------------------------------*/
+#section-pr-thomas-robertson{
+	background-position: right top; 
+	background-size: 64% auto; 
+	background-repeat: no-repeat; 
+	height: 480px;
+	margin-bottom: 80px;
+	position: relative;
+
+
+	> .container,
+	> .container > .row{
+		height: 100%;
+	}//container
+
+	> .container > .row > [class^="col-"]{
+		height: 0;
+		top: 100%;
+		position: relative;
+	}
+
+
+	.card{
+		border-color: #fff;
+		font-size: .8rem; 
+		line-height: 1.5;
+		bottom: -70px;
+		position: relative;
+		box-shadow: 0 1px 3px rgba(#000,.4);
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+
+		.h3{margin: 0 0 10px;}
+	}//card
+}//section-pr-thomas-robertson

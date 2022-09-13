@@ -1,0 +1,172 @@
+/*----------------------------------------*/
+/*  CONTACT
+/*----------------------------------------*/
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+
+
+
+body.page-template-page-contact{
+	background: #fff;
+
+	#section-map{
+		margin-bottom: -50px;
+		position: relative;
+		z-index: 40;
+
+		.gmap{
+			height: 100vh;
+		}
+	}//section-map
+
+
+
+	.fixed-sidebar{
+		width: 100%;
+		top: calc(100vh - 220px);
+		z-index: 50;
+
+
+
+		.latest-preaches{
+			background: #fff;
+			padding: 20px;
+		}//latest-preaches
+
+	}//fixed-sidebar
+
+}//page-template-page-contact
+
+
+
+
+.contact-form{
+	padding-bottom: 80px;
+
+	form{
+		.row{ 
+			> [class^="col-"]{
+				padding: 0;
+			}//[class^="col-"]
+
+
+			> [class^="col-"] + [class^="col-"]{
+
+				.form-control{
+					border-color: transparent transparent #ddd transparent;
+					border-width: 0 0 1px 0;
+				}//form-control
+
+			}//[class^="col-"]
+		}//row
+	}//form
+
+
+
+	br{display: none;}
+
+
+	hr{
+		background: $primary-color;
+		border: none;
+		width: 0;
+		height: 2px;
+		margin: 0;
+		transition: .3s;
+	}
+
+
+	.form-control{
+		border-color: transparent #ddd #ddd transparent; 
+		border-width: 0 1px 1px 0;
+		padding: 14px 16px;
+		border-radius: 0;
+		@include placeholder {
+			transition: .3s;
+		}//placeholder
+
+		&:focus{
+			box-shadow: 0 -2px 0 $primary-color inset;
+
+			@include placeholder {
+				color: transparent;
+			}//placeholder
+
+		}//focus
+	}//form-control
+
+
+	textarea.form-control{
+		border-right: 0;
+	}//form-control
+
+
+	.ajax-loader{
+		right: 120px;
+		position: absolute;
+	}//ajax-loader
+
+}//contact-form
+
+
+
+.modal-body{
+	padding: 0;
+
+
+	.contact-form{
+		padding: 0 20px 40px;
+
+		form .row{
+			margin-left: -20px;
+			margin-right: -20px;
+		}//form .row
+
+		form footer{
+			padding-left: 20px;
+			padding-right: 20px;
+		}//form footer
+
+		.btn{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}//btn
+	}//contact-form
+
+}//modal-body
+
+
+
+
+span.wpcf7-not-valid-tip{
+	padding: 0 15px;
+}
+
+
+
+
+
+
+

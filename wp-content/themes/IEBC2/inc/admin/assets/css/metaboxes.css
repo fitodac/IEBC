@@ -1,0 +1,140 @@
+/*	THEME OPTIONS	*/
+.wrap.carbon-theme-options {
+  background: #fff;
+  padding-top: 10px;
+  margin: 0 0 0 -20px; }
+  .wrap.carbon-theme-options h2 {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 20px; }
+  .wrap.carbon-theme-options #poststuff #post-body.columns-2 {
+    margin: 0; }
+    .wrap.carbon-theme-options #poststuff #post-body.columns-2 #post-body-content {
+      float: none; }
+      .wrap.carbon-theme-options #poststuff #post-body.columns-2 #post-body-content::after {
+        content: '';
+        clear: both;
+        display: block; }
+      .wrap.carbon-theme-options #poststuff #post-body.columns-2 #post-body-content .carbon-tabs-body {
+        width: calc(100% - 195px); }
+    .wrap.carbon-theme-options #poststuff #post-body.columns-2 #postbox-container-1 {
+      width: auto;
+      margin: 0 0 80px;
+      right: auto;
+      top: auto !important;
+      position: relative !important;
+      float: none; }
+      .wrap.carbon-theme-options #poststuff #post-body.columns-2 #postbox-container-1 .postbox h3 {
+        display: none; }
+
+#theme-options-form .postbox {
+  border: none; }
+#theme-options-form .theme-options-container .carbon-tabs {
+  margin: 0; }
+#theme-options-form .theme-options-container .carbon-tabs-nav {
+  background: #444;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  float: left; }
+  #theme-options-form .theme-options-container .carbon-tabs-nav li {
+    background-color: transparent;
+    top: 0;
+    display: block; }
+    #theme-options-form .theme-options-container .carbon-tabs-nav li a {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 400;
+      padding: 13px 10px;
+      margin: 0;
+      display: block; }
+    #theme-options-form .theme-options-container .carbon-tabs-nav li a:hover,
+    #theme-options-form .theme-options-container .carbon-tabs-nav li a:active,
+    #theme-options-form .theme-options-container .carbon-tabs-nav li a:focus {
+      background: #333; }
+    #theme-options-form .theme-options-container .carbon-tabs-nav li.active a {
+      background: #0073AA;
+      color: #fff; }
+#theme-options-form .theme-options-container .carbon-tabs-body {
+  width: 550px;
+  padding-left: 15px;
+  margin: 0;
+  float: left; }
+
+.carbon-container .carbon-field,
+.carbon-container .carbon-fields-row > .carbon-field {
+  padding: 20px; }
+  .carbon-container .carbon-field label,
+  .carbon-container .carbon-fields-row > .carbon-field label {
+    color: #666;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0; }
+  .carbon-container .carbon-field input[type="text"],
+  .carbon-container .carbon-field textarea,
+  .carbon-container .carbon-fields-row > .carbon-field input[type="text"],
+  .carbon-container .carbon-fields-row > .carbon-field textarea {
+    background: #fff;
+    color: #444;
+    padding: 8px 10px;
+    border-radius: 3px;
+    box-shadow: none; }
+  .carbon-container .carbon-field .input-with-button .button,
+  .carbon-container .carbon-fields-row > .carbon-field .input-with-button .button {
+    background: #0084c4;
+    border-color: #0084c4;
+    color: #fff;
+    line-height: 2;
+    height: auto;
+    padding: 4px 18px;
+    border-radius: 3px;
+    box-shadow: none; }
+    .carbon-container .carbon-field .input-with-button .button:hover, .carbon-container .carbon-field .input-with-button .button:active, .carbon-container .carbon-field .input-with-button .button:focus,
+    .carbon-container .carbon-fields-row > .carbon-field .input-with-button .button:hover,
+    .carbon-container .carbon-fields-row > .carbon-field .input-with-button .button:active,
+    .carbon-container .carbon-fields-row > .carbon-field .input-with-button .button:focus {
+      background: #0073AA;
+      border-color: #0073AA; }
+  .carbon-container .carbon-field .help-text,
+  .carbon-container .carbon-field .description,
+  .carbon-container .carbon-fields-row > .carbon-field .help-text,
+  .carbon-container .carbon-fields-row > .carbon-field .description {
+    color: #999;
+    font-size: 12px;
+    font-style: normal; }
+  .carbon-container .carbon-field.carbon-Separator,
+  .carbon-container .carbon-fields-row > .carbon-field.carbon-Separator {
+    color: #666;
+    border: none;
+    padding: 10px 13px;
+    box-shadow: 0 1px 2px #ccc; }
+    .carbon-container .carbon-field.carbon-Separator h3,
+    .carbon-container .carbon-fields-row > .carbon-field.carbon-Separator h3 {
+      color: #666;
+      font-size: 14px !important;
+      text-transform: uppercase; }
+  .carbon-container .carbon-field + .carbon-field.carbon-Separator,
+  .carbon-container .carbon-fields-row > .carbon-field + .carbon-field.carbon-Separator {
+    border-top: none;
+    margin-top: 25px; }
+  .carbon-container .carbon-field.carbon-File .attachment-url,
+  .carbon-container .carbon-fields-row > .carbon-field.carbon-File .attachment-url {
+    background-color: transparent;
+    color: #999;
+    border-color: #ccc;
+    padding: 8px 10px;
+    border-radius: 3px;
+    box-shadow: none; }
+  .carbon-container .carbon-field + .carbon-field,
+  .carbon-container .carbon-fields-row > .carbon-field + .carbon-field {
+    border-left: none !important; }
+.carbon-container .carbon-field + .carbon-field,
+.carbon-container .carbon-field + .carbon-fields-row,
+.carbon-container .carbon-fields-row + .carbon-field,
+.carbon-container .carbon-fields-row {
+  border-top: none !important; }

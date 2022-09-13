@@ -1,0 +1,41 @@
+/*----------------------------------------*/
+/*  SOY NUEVO
+/*----------------------------------------*/
+#section-content{
+	background: #fff;
+
+	.card{
+		border-color: #fff; 
+		top: -80px; 
+		position: relative; 
+		border-radius: 2px; 
+		box-shadow: 0 -8px 10px -4px rgba(#000,.5);
+	}//card
+
+}//section-content
+
+
+
+body.page-template-page-new-here{
+	background: #fff;
+
+	#section-map{
+		background: #fff;
+		overflow: hidden;
+	}//section-map
+
+
+	.fixed-sidebar{
+		width: 100%;
+		top: calc(80vh - 100px);
+	}//fixed-sidebar
+
+}//page-template-page-new-here
+
+
+
+
+
+
+
+

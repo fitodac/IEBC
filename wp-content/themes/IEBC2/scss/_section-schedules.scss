@@ -1,0 +1,175 @@
+/*----------------------------------------*/
+/*  SCHEDULES SECTION
+/*----------------------------------------*/
+#section-horarios-de-reuniones{
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	padding: 70px 0 90px;
+
+	.ion-ios-clock-outline{ font-size: 3rem; }
+
+	.h4{margin: 0 0 50px;}
+
+	.schedule-1{
+		text-align: center;
+		float: right;
+	}//schedule-1
+
+	.schedule-2{
+		text-align: center;
+		float: left;
+	}//schedule-1
+
+	[class*="schedule-"]{
+		.date{}
+		.hour{font-weight: 200; font-size: 2.5rem;}
+		.activity{}
+	}
+
+
+	.container{ 
+		.h4 + .row{
+			padding-top: 30px;
+			
+			> [class^="col-"]{
+				border-left: solid 1px rgba(#fff,.5);
+				font-size: .7rem;
+				text-align: center;
+
+				&:first-child{border-left: none;}
+			}
+			.date{}
+			.hour{font-weight: 200; font-size: 1.5rem;}
+			.activity{}
+		}//row
+
+
+		> .h4{
+			font-size: 1.3rem;
+			text-align: center;
+			margin-top: 70px;
+
+			&::before{
+				content: '';
+				background: #fff;
+				width: 120px;
+				height: 1px;
+				margin: 0 auto 50px; 
+				display: block;
+			}
+		}//h4
+	}//container
+
+}//section-horarios-de-reuniones
+
+
+
+
+
+// SCHEDULES IN INNER PAGES
+body:not(.home) #section-horarios-de-reuniones{
+	padding: 50px 0 70px;
+
+	.h4{margin-bottom: 35px;}
+
+	.schedule-1{
+		text-align: left;
+		float: none;
+
+		&::after{
+			content:'';
+			background: #fff;
+			width: 1px;
+			height: 100%;
+			right: -20%;
+			top: 0;
+			position: absolute;
+		}
+
+	}//schedule-1
+
+
+	.schedule-2{
+		text-align: left;
+	}//schedule-2
+
+
+	[class*="schedule-"]{
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 10px;
+
+
+		&::after{
+			content: '';
+			display: block;
+			clear: both;
+		}//after
+
+		.hour{
+			font-size: 2.3rem;
+			font-weight: 300;
+			line-height: 1;
+			float: left;
+
+			small{font-size: 70%;}
+		}//hour
+
+		.activity{
+			font-size: 1.1rem;
+			line-height: 1;
+			height: 35px;
+			padding-left: 15px;
+			overflow: hidden;
+			vertical-align: bottom;
+			display: table-cell;
+		}//activity
+	}//schedule
+
+
+
+	.row + .h4{
+		text-align: center;
+		margin-top: 50px;
+	}//h4
+
+
+	.h4 + .row{
+
+		[class^="col-"]{
+			border: none;
+			text-align: left;
+			margin-bottom: 25px;
+
+			.date{
+				font-size: .8rem;
+				padding-left: 115px;
+			}//date
+
+			.hour{
+				border-right: solid 1px rgba(#fff,.5);
+				padding-right: 15px;
+				padding-bottom: 5px;
+				top: 0;
+				position: absolute;
+			}//hour
+
+			.activity{
+				font-size: .9rem;
+				padding-left: 115px;
+			}//activity
+		}//col
+
+	}//row
+
+}//body:not(.home) #section-horarios-de-reuniones
+
+
+
+
+
+
+
+
